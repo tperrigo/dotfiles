@@ -33,17 +33,13 @@ alias mv='mv -v'
 alias javas='/usr/libexec/java_home -V'
 alias mini='minikube'
 alias k='kubectl'
-#alias colima-start='colima start --cpu 2 --memory 6 --disk 200 --with-kubernetes'
 alias minienv='eval $(minikube -p minikube docker-env)'
 #alias lg=lazygit
 alias cat="bat --theme=\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo default || echo GitHub)"
 
 export EDITOR=nano
 export GITSTATUS_LOG_LEVEL=DEBUG
-
-#export DOCKER_HOST="unix:///Users/$USERNAME/.colima/docker.sock"
-#export PATH=":${KREW_ROOT:-$HOME/.krew}/bin:$PATH:/usr/local/sbin"
-#export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
